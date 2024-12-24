@@ -13,8 +13,10 @@ router.post('/create_course',create_course.create_course);
 router.post('/create_student',create_student.create_student);
 
 const { create_course2, fetch_courses } = require('../admin/fetch_courses');
+const { create_course3, stud_fetch_courses} = require('../admin/stud_fetch_courses');
 
 // router.post('/create_course', create_course);
 router.get('/fetch_courses', fetch_courses);
+router.get('/stud_fetch_courses', stud_fetch_courses);
 
 module.exports = router;
