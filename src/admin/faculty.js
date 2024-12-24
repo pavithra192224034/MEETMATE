@@ -44,7 +44,7 @@ const create_faculty = (req, res) => {
     return res.status(400).json({ message: "All fields are required", Q:req.query });
   }
 
-  const user_type = 101;
+  const user_type = 110;
 
   const query = 
     "INSERT INTO users (register_number, password, Student_name, Mobile_contact, Email, Address, pincode, Date_of_birth, Gender, User_type) "+
